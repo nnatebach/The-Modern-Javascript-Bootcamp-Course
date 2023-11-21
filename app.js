@@ -1,25 +1,27 @@
 let animals = ['shark', 'salmon', 'whale', 'bear', 'lizard', 'tortoise']
 
-// swimmers are shark, salmon, whale
-let swimmers = animals.slice(0, 3)
-console.log('swimmers are ' + swimmers);
+// splice(startIdx, deleteCount, itemsToInsert)
 
-// mammals are whale and bear
-let mammals = animals.slice(2, 4)
-console.log('mammals are ' + mammals);
+// ===================
+// INSERTING w/ SPLICE
+// ===================
 
-// reptiles are lizard and tortoise
-// let reptiles = animals.slice(2, 4)
-// let reptiles = animals.slice(4)
-let reptiles = animals.slice(-2)
-console.log('reptiles are ' + reptiles);
+// ['shark', 'octopus', 'salmon', 'whale', 'bear', 'lizard', 'tortoise']
+animals.splice(1, 0, 'octopus')
+// at index 1, delete 0 items and insert 'octopus'
 
-// quadruped are bear, lizard, tortoise
-let quadruped = animals.slice(-3)
-console.log('quadruped are ' + quadruped);
+// ===================
+// DELETING w/ SPLICE
+// ===================
 
-// A quick way to make a copy of an array and it does not impact the original array
-let copy = animals.slice()
-console.log(copy);
+// ['shark', 'octopus', 'bear', 'lizard', 'tortoise']
+animals.splice(2, 2)
+// at index 2, delete 2 items
 
-console.log(animals); // the original array stays the same
+// ===================
+// REPLACING w/ SPLICE
+// ===================
+
+// ['shark', 'octopus', 'dolphin', 'rabbit', 'tortoise']
+animals.splice(2, 2, 'dolphin', 'rabbit')
+// at index 2, delete 2 items and replace them with 'dolphin' and 'rabbit'
