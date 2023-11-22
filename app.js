@@ -1,18 +1,31 @@
-// Using Const with Arrays
-// We can change the internals of the array BUT we canNOT point to a new array, neither to a string nor to a boolean
+// Nested array
 
-const nums = [1,2,3,4]
-nums.push(5,6)
-console.log(nums); // 1,2,3,4,5,6
-nums.unshift(-1)
-console.log(nums); // -1,1,2,3,4,5,6
-nums.pop()
-nums.pop()
-nums.pop()
-nums.pop()
-nums.pop()
-nums.pop()
-nums.pop()
-console.log(nums); // [] => the array is empty
-nums = []
-console.log(nums); // Uncaught TypeError: Assignment to constant variable. => canNOT point to a new array
+const foods = [
+  ['chicken', 'rice'],
+  ['beefsteak', 'potatoes'],
+  ['rice paper', 'sauce']
+]
+
+console.log(foods); // (3) [Array(2), Array(2), Array(2)]
+
+// Accessing array element
+// 'beefsteak'
+console.log(foods[1][0]); // beefsteak
+
+// changing array element
+// 'chicken' => 'drumstick'
+console.log(foods[0][0] = 'drumstick'); // drumstick
+console.log(foods[0]); // (2) ['drumstick', 'rice']
+
+// adding array element: ['beefsteak', 'potatoes'] => ['beefsteak', 'potatoes', 'garlic sauce']
+console.log(foods[1].push('garlic sauce'));
+console.log(foods[1]); // (3) ['beefsteak', 'potatoes', 'garlic sauce']
+
+const animalPairs = [
+  ['dog', ['cat', 'rabbit']],
+  ['dinosaur', 'pig'],
+  [['ant', 'crocodile'], 'dolphin', ['elephant', 'kangaroo']]
+]
+
+// get 'elephant'
+console.log(animalPairs[2][2][0]); // elephant
