@@ -1,18 +1,18 @@
-// Primitive types are stored as the actual value in the variable
-// Arrays are different. Instead the variable stores a reference to where that array is in memory
+// Using Const with Arrays
+// We can change the internals of the array BUT we canNOT point to a new array, neither to a string nor to a boolean
 
-
-// Primitive types
-let fruit = 'orange'
-let color = fruit
-console.log(fruit); // orange
-fruit = 'watermelon'
-console.log(fruit); // watermelon
-console.log(color); // orange
-
-// Arrays
-let nums = [1,2,3,4]
-let otherNums = nums
-nums.push(5,6,7)
-console.log(nums); // 1,2,3,4,5,6,7
-console.log(otherNums); // 1,2,3,4,5,6,7
+const nums = [1,2,3,4]
+nums.push(5,6)
+console.log(nums); // 1,2,3,4,5,6
+nums.unshift(-1)
+console.log(nums); // -1,1,2,3,4,5,6
+nums.pop()
+nums.pop()
+nums.pop()
+nums.pop()
+nums.pop()
+nums.pop()
+nums.pop()
+console.log(nums); // [] => the array is empty
+nums = []
+console.log(nums); // Uncaught TypeError: Assignment to constant variable. => canNOT point to a new array
