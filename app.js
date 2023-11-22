@@ -1,27 +1,18 @@
-let animals = ['shark', 'salmon', 'whale', 'bear', 'lizard', 'tortoise']
+// Primitive types are stored as the actual value in the variable
+// Arrays are different. Instead the variable stores a reference to where that array is in memory
 
-// splice(startIdx, deleteCount, itemsToInsert)
 
-// ===================
-// INSERTING w/ SPLICE
-// ===================
+// Primitive types
+let fruit = 'orange'
+let color = fruit
+console.log(fruit); // orange
+fruit = 'watermelon'
+console.log(fruit); // watermelon
+console.log(color); // orange
 
-// ['shark', 'octopus', 'salmon', 'whale', 'bear', 'lizard', 'tortoise']
-animals.splice(1, 0, 'octopus')
-// at index 1, delete 0 items and insert 'octopus'
-
-// ===================
-// DELETING w/ SPLICE
-// ===================
-
-// ['shark', 'octopus', 'bear', 'lizard', 'tortoise']
-animals.splice(2, 2)
-// at index 2, delete 2 items
-
-// ===================
-// REPLACING w/ SPLICE
-// ===================
-
-// ['shark', 'octopus', 'dolphin', 'rabbit', 'tortoise']
-animals.splice(2, 2, 'dolphin', 'rabbit')
-// at index 2, delete 2 items and replace them with 'dolphin' and 'rabbit'
+// Arrays
+let nums = [1,2,3,4]
+let otherNums = nums
+nums.push(5,6,7)
+console.log(nums); // 1,2,3,4,5,6,7
+console.log(otherNums); // 1,2,3,4,5,6,7
