@@ -1,31 +1,22 @@
-// Nested array
+// Arrays are especially used for when you have ordered information.
+// However, arrays are not good for storing piece of data that should be grouped together
+// If the order is paramount => Array
 
-const foods = [
-  ['chicken', 'rice'],
-  ['beefsteak', 'potatoes'],
-  ['rice paper', 'sauce']
-]
+// Example: Someone's fitness data including the data of walk, run, exercising hours, ....
+// Object is the better fit for that kind of data
 
-console.log(foods); // (3) [Array(2), Array(2), Array(2)]
+const fitbitData = {
+  totalSteps: 12354,
+  totalMiles: 5123.42,
+  avgCaloriesBurn: 11234,
+  avgGoodSleep: '2:13'
+}
 
-// Accessing array element
-// 'beefsteak'
-console.log(foods[1][0]); // beefsteak
+// Objects are collections of properties
+// Properties are a key-value pair (pairs of information)
+// We access Object data by using custom keys rather than using an index
 
-// changing array element
-// 'chicken' => 'drumstick'
-console.log(foods[0][0] = 'drumstick'); // drumstick
-console.log(foods[0]); // (2) ['drumstick', 'rice']
+'asdasd'.length // length is the 'property' of string 'asdasd'
 
-// adding array element: ['beefsteak', 'potatoes'] => ['beefsteak', 'potatoes', 'garlic sauce']
-console.log(foods[1].push('garlic sauce'));
-console.log(foods[1]); // (3) ['beefsteak', 'potatoes', 'garlic sauce']
-
-const animalPairs = [
-  ['dog', ['cat', 'rabbit']],
-  ['dinosaur', 'pig'],
-  [['ant', 'crocodile'], 'dolphin', ['elephant', 'kangaroo']]
-]
-
-// get 'elephant'
-console.log(animalPairs[2][2][0]); // elephant
+// an object is more like a blob that holds different pieces of data
+// key and value pairs where there's not necessarily an order.
