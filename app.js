@@ -1,22 +1,17 @@
-// Arrays are especially used for when you have ordered information.
-// However, arrays are not good for storing piece of data that should be grouped together
-// If the order is paramount => Array
+let foods = {
+  chicken: 124324,
+  rice: 12465,
+  lobster: 9878,
+  pasta: 98734,
 
-// Example: Someone's fitness data including the data of walk, run, exercising hours, ....
-// Object is the better fit for that kind of data
-
-const fitbitData = {
-  totalSteps: 12354,
-  totalMiles: 5123.42,
-  avgCaloriesBurn: 11234,
-  avgGoodSleep: '2:13'
+  45: 'something a number'
 }
 
-// Objects are collections of properties
-// Properties are a key-value pair (pairs of information)
-// We access Object data by using custom keys rather than using an index
+// The 'keys' of the 'property' inside an Object are automatically converted to strings
+// => chicken, rice, lobster, pasta are Strings
+// If we use a number (e.g., 1,4,5,3,8,...) as the key of a property => It will be turned into a string
+// Unless the 'key' is a 'Symbol' then it will NOT be stored as a string.
 
-'asdasd'.length // length is the 'property' of string 'asdasd'
-
-// an object is more like a blob that holds different pieces of data
-// key and value pairs where there's not necessarily an order.
+console.log(foods);
+// console.log(foods.45); // Uncaught SyntaxError: Unexpected number
+// NOTE: It is NOT possible to access the key property '45' with the dot '.' => There is a different solution for that.
