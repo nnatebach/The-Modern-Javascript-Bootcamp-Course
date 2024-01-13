@@ -1,5 +1,3 @@
-6. GOALS & PRIMITIVES
-
 GOALS
 - Work with primitive types
 - Understand let & const
@@ -32,3 +30,16 @@ Orders of operations: parenthesis, exponent, multiplication, division , addition
 Example:
 3 - 9 * 2 = -15
 (3 - 9) * 2 = -12
+
+
+NaN & Infinity
+0/0 => NaN
+1 + NaN => NaN
+
+1 / 0 => Infinity
+-1 / 0 => Infinity
+
+Notes:
+- 0 and -0, they are their own values in JS
+- NaN does not necessary mean something went wrong, it is not necessary to be an error.
+- NaN means this is not a standard math or JS will have a hard time representing this number or value as a true numeric value.
