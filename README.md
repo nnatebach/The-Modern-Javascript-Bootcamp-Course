@@ -15,7 +15,7 @@ PRIMITIVE TYPES - represent data in our code
 
 ---------------------------------------
 
----- Number ----
+----- Number -----
 JavaScript stores all kinds of numbers with Number type
 You will not always have perfect precision of irrational number: For example if we get the result 3.3333333(infinite 3s)5 from a calculation => you will get an approximation.
 
