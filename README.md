@@ -35,9 +35,12 @@ Example:
 
 
 ---- NaN & Infinity ----
+
+-- NaN --
 0/0 => NaN
 1 + NaN => NaN
 
+-- Infinity --
 1 / 0 => Infinity
 -1 / 0 => Infinity
 
