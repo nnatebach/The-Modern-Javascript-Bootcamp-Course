@@ -13,13 +13,15 @@ PRIMITIVE TYPES - represent data in our code
 
 ***** the rest two are Symbol and BigInt
 
-- Number
+---------------------------------------
+
+---- Number ----
 JavaScript stores all kinds of numbers with Number type
 You will not always have perfect precision of irrational number: For example if we get the result 3.3333333(infinite 3s)5 from a calculation => you will get an approximation.
 
 Calculation: +, -, *, /, % (modulo), ** (exponent)
 
-Example for modulo:
+---- modulo ----
 25 % 5 = 0
 16 % 3 = 1
 14 % 4 = 2
@@ -32,7 +34,7 @@ Example:
 (3 - 9) * 2 = -12
 
 
-NaN & Infinity
+---- NaN & Infinity ----
 0/0 => NaN
 1 + NaN => NaN
 
