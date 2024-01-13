@@ -1,11 +1,16 @@
-Section 1: Introduction
-Lesson 4 - Customizing VSCode & Extensions
-Video reference: https://youtu.be/rH1RTwaAeGc?si=zBE1OVlT0iFg7Az6
-In this section we talk about
-- Emmet
-- Material Theme
-- CSS Peek (F12, option + F2)
-- Color highlight (custom with User Setting > Extensions > Color Highlight > Maker Type > e.g. dot-before)
-- Bracket pair colorizer (deprecated, this is now the built-in extension in VS Code)
-- React snippets (boilerplate)
-- Prettier now (Prettifier) (Settings > user > "editor.format")
+6. GOALS & PRIMITIVES
+
+GOALS
+- Work with primitive types
+- Understand let & const
+- Use String Template Literals
+- Work with common operators/methods
+
+PRIMITIVE TYPES - represent data in our code
+- Number
+- String
+- Boolean
+- Null
+- Undefined
+
+***** the rest two are Symbol and BigInt
